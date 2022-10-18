@@ -6,6 +6,7 @@ import "prismjs/themes/prism-dark.css";
 import "../src/assets/demo/flags/flags.css";
 import "../src/assets/demo/Demos.scss";
 import "../src/assets/layout/layout.scss";
+import * as serviceWorker from "../src/serviceWorker";
 // import "../public/assets/themes/lara-light-indigo/theme.css";
 import Layout from "../src/components/Layout";
 import React from "react";
@@ -29,3 +30,8 @@ export default function MyApp({ Component, pageProps }) {
         </>
     );
 }
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
